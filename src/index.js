@@ -1,11 +1,19 @@
 import React from 'react'
 import ReactDom from 'react-dom'
+import './index.css'  
 
 
 //Create an amazon book cover 
 function BookList() {
   return (
-    <section>
+    <section className="booklist">
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
       <Book />
     </section>
   )
@@ -13,7 +21,7 @@ function BookList() {
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image> </Image>
       <Title />
       <Author />
