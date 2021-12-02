@@ -1,0 +1,8 @@
+Props
+In React JS you can pass values as parameters from parent Component to child Components 
+The values are wrapped in a box called props (props is an object)
+
+function ComponentParent(props) {
+  <ComponentChild01 />
+  <ComponentChild02 />
+}
