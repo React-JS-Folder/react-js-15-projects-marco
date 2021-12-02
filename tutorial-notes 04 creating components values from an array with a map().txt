@@ -1,0 +1,17 @@
+1. Create an array (create a list) with the data you want to send to the components
+
+2. Create a map to print the array data (list data) into each component 
+
+example:
+const books = [
+  {
+    name: "Jake"
+  },
+  {
+    name: "Jim"
+  }
+]
+
+const eachListItem = books.map( (eachName) => {
+  <h1>{eachName}</h1>
+})
