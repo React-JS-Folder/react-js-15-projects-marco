@@ -1,0 +1,15 @@
+React Components can have direct value or can be given a value from variables, just like vanilla javascript
+
+function Component01(){
+
+  return(
+      <h1>The Sun and the Moon</h1>      //direct value 
+  )
+}
+
+function Component01(){
+  const title = "The Sun and the Moon";
+  return(
+      <h1> {title} </h1>      //value from a variable inside { }
+  )
+} 

@@ -20,21 +20,24 @@ function BookList() {
 }
 
 const Book = () => {
+  const title = "I love You to the Moon and Back";
+  const author = "Amelia Hepworth";
+  const img =  "https://images-na.ssl-images-amazon.com/images/I/81eB%2B7%2BCkUL._AC_UL200_SR200,200_.jpg" 
+
+
   return (
     <article className="book">
-      <Image> </Image>
-      <Title />
-      <Author />
+      <img 
+      src={img}
+      alt="" 
+      />
+      <h1>{title}</h1>      { /* the { } are to return the value of the expression */ }
+      <h4>{author.toUpperCase()}</h4>     { /* you can use string methods    author.toUpperCase() */}
+
+
     </article>
   );
 
 };
-
-const Image = () => (
-  <img src="https://images-na.ssl-images-amazon.com/images/I/81eB%2B7%2BCkUL._AC_UL200_SR200,200_.jpg" alt="" />
-);
-
-const Title = () => <h1>I love You to the Moon and Back</h1>
-const Author = () => <h4>Amelia Hepworth</h4>
 
 ReactDom.render(<BookList />, document.getElementById("root"));
