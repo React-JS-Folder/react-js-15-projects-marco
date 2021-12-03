@@ -23,7 +23,8 @@ function BookList(){
       {books.map( (book) => {
         const {img, title, author} = book;
         return (
-          <Book title={title} author={author} />
+          // <Book title={title} author={author} />   // you take value by value, too slow. 
+          <Book book={book} />                        // you create an object and take all values from it 
         )
       })}
      
@@ -33,7 +34,8 @@ function BookList(){
 
 
 const Book = (props) => {
-  const {img, title, author} = props;
+  // const {img, title, author} = props;         //pulling values from parent components props --- slow 
+  const {img, title, author} = props.book;       //after creating an object in props --------------faster
 
   return (
     <article className="book">

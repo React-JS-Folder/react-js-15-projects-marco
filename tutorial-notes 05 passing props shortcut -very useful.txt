@@ -1,0 +1,36 @@
+To populate a React JS Component from an array using a map - fast
+1. Create the map for the array 
+2. Instead of adding the values to the component variables create a variable with same name as map element 
+
+example: 
+const books = [
+  {
+    img: 'https://........1 ',
+   
+  },
+  {
+    img: 'https://........2 ',
+  }
+];
+
+function BookList() {
+  return (
+    <section className='booklist'>
+      {books.map( (book) => {
+        const {img, title, author} = book;
+        return <Book book={book} />               //you are creating an object in props
+      })}                                         //the child component takes all the variables
+    </section>
+  );
+}
+
+const Book = (props) => {
+  const {img, title, author} = props.book;         //you pull data from that object 
+
+  return (
+    <article className="book">
+      <img src={img} alt="" />
+      <h1>{title}</h1>
+
+  )
+}
