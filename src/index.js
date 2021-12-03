@@ -24,7 +24,7 @@ function BookList(){
     <section className="booklist">
       {books.map( (book) => {
         return (
-          <Book key={book.id} book={book} />   //for each map element print component with the key                 
+          <Book key={book.id} {...book} />       //using spread operator to pull all the variables             
         )
       })}
      
@@ -33,8 +33,7 @@ function BookList(){
 }
 
 
-const Book = (props) => {
-  const {img, title, author} = props.book;       
+const Book = ({img, title, author}) => {       //you can pull the variables instead of props directly
   return (
     <article className="book">
       <img src={img} alt="" />
