@@ -1,0 +1,22 @@
+You can execute a function by reference or by typing the function inline
+example:
+
+------------------------------------------------------------------
+add function as reference:
+1. Create the function
+2. Add the name of the function to the element
+
+example:
+function run() {
+  console.log("run");
+}
+
+button onClick={run}
+------------------------------------------------------------------
+------------------------------------------------------------------
+add function as inline function:
+1. Create the function inside the element you assign the event
+
+<button onClick= () => { console.log("run"); } >
+  click to run
+</button>
