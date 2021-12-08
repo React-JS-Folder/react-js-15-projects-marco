@@ -1,0 +1,19 @@
+How to upload a React JS App/Website
+
+# 1. npm run build       // to make a live React app/website  //from development to production environment 
+   It will create a folder in src called "build" and now it is ready to be deployed
+
+# 2. Find a Hosting Provider (for the course -- www.netlify.com   //free hosting)
+   create a free account and drag and drop the built project to import
+
+# 3. when you drag and drop it will give you a website name .netlify.app
+the website default name is in the page Getting Started. (but you have already a website with default name)
+
+
+the website/app is successfully running online!!
+
+
+----------------------------------------------------------
+## The development environment is your local computer ##
+## The production environment is the live product ##
+----------------------------------------------------------
