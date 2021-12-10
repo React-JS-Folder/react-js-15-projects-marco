@@ -13,6 +13,7 @@ const UseStateArray = () => {
           </div>
         )
       })}
+      <button type="button" className="btn" onClick={ () => { setPeople([])}} > delete list elements</button>
     </>
 
    );

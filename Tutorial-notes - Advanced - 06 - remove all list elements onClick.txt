@@ -1,0 +1,17 @@
+To remove all elements from a list created using useState and map 
+Just empty the variable where the map printed out the items/values
+
+example:
+1. Create the map from a variable.
+      import {useState} from 'react'
+
+      const listNames = [1,2,3,4,5];
+      const [names, setNames] = useState(listNames);
+
+      names.map( (eachName) => {
+        <li>{eachName}</li>
+      })
+
+2. - Empty the list on click   /////just setNames to empty array 
+
+<button onClick={ () => { setNames([]) }}> empty the list </button>
