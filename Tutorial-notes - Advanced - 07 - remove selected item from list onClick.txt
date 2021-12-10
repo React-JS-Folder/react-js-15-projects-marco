@@ -1,0 +1,6 @@
+To remove an item from a list using a filter()
+
+1. create an array and use a map to create the list
+2. create a variable to filter the element id from the rest of elements 
+3. use useState to set new map to print out the values 
+
