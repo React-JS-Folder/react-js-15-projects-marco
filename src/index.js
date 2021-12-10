@@ -1,30 +1,11 @@
-import React from 'react'
-import ReactDom from 'react-dom'
-import './index.css'  
-import {books} from './books'
-import Book from './Book'
-import {greeting} from './testing/testing'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
 
-
-function BookList(){
-  console.log(greeting);
-  return(
-    <section className="booklist">
-      {books.map( (book) => {
-        return (
-          <Book key={book.id} {...book} />       //using spread operator to pull all the variables             
-        )
-      })}
-     
-    </section>
-  );
-}
-
-
-
-
-
-
-
-
-ReactDom.render(<BookList />, document.getElementById("root"));
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
