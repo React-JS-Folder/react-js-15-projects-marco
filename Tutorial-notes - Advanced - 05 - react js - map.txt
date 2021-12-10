@@ -1,0 +1,33 @@
+To iterate through a list of items in React is used map()
+
+
+
+
+
+## To get data from an external js file.
+1. import file 
+2. get the variable and create the map 
+
+
+example:
+Create a map from an array in clientes.js
+
+
+clients.js ----------------------------------
+       const newClients = ["ann", "ben", "sarah", "wesley", "adam"];
+
+
+
+Component02.js ------------------------------
+
+      import {newClients} from './clients.js'
+
+
+      function Component02() {
+
+        return ( 
+          {newClients.map( (client) => {
+            return <p>{client} </p>
+          })}
+        )
+      }

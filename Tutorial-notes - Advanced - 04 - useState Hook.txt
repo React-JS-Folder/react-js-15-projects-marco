@@ -1,0 +1,16 @@
+To import useState hook:
+
+1. import and after use useState
+
+   import {useState} from 'react'
+   const [name, setName] = useState("Miriam");
+
+
+
+
+2. import useState when you use it
+   
+   const [name, setName] = React.useState()
+
+
+   
