@@ -1,0 +1,24 @@
+Each js file can have multiple React components, but only 1 is the default component.
+
+When you add the default component to other component you can change the name like a normal variable 
+
+Example:
+
+
+##########
+errorExample.js
+
+  export default const ErrorExample = () => {
+    return <h2>useState error example</h2>;
+  };
+
+
+##########
+App.js
+
+  import ComponentName1 from './tutorial/1-useState/setup/1-error-example'
+
+  return(
+    <ComponentName1 />        after you take the name and use it 
+  )
+

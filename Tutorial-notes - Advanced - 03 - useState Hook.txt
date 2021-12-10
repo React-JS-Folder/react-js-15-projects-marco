@@ -1,0 +1,8 @@
+Advanced Tutorial 01
+
+1. React JS has Hooks (Hooks are built-in functions)
+2. React JS components names start with uppercase
+3. React JS hooks like useState() must be inside the function/component body
+   React JS hooks have function/component scope
+
+4. useState hook   // it lets you update values without reloading the website/app 

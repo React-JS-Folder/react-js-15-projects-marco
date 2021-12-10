@@ -1,0 +1,17 @@
+The React JS tutorial has 2 parts. 
+1. - React JS Basics ----------------- done!
+2. - React JS Advanced
+
+## To follow the React JS Advanced I needed to download the tutorial folder from Github. 
+  1. - I deleted everything from my "react-js-15-projects" I only kept .git file  
+  2. - I passed the Advanced Folder content in it.
+  3. - Install project dependencies // npm install    -Github only store dependencies names 
+
+
+######################
+The Advanced Section of the Course already has css style created
+This is a React JS Tutorial - the outcome of the code will be affected by the css style 
+######################
+
+
+
