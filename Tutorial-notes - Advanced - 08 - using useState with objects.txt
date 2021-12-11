@@ -1,0 +1,32 @@
+React JS - useState() parameter can take an object
+
+const {person, setPerson} = useState({
+  name: 'peter', 
+  age: 24, 
+  message: 'random message'
+});
+
+console.log(person.name);      // peter 
+console.log(person.message);   // 'random message'
+
+###################################################################
+###################################################################
+To change the value of object properties using useState 
+1. use Spread operator
+2. select property and change value 
+
+example:
+
+    const {person, setPerson} = useState({
+      name: 'peter', 
+      message: 'random message'
+    });
+
+
+    setPerson({...person, message: 'hello world'}) 
+    
+    
+    //if you set a value it will change the type to the new value
+    setPerson("this is the pc world")   // now person is a string // it will delete previous data
+
+###################################################################
