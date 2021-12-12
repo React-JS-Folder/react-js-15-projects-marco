@@ -1,12 +1,11 @@
 import React from 'react'
-import UseStateArray2 from './tutorial/1-useState/setup/3-useState-array-marco-testingFilter'
-
+import UseEffectBasics from './tutorial/2-useEffect/setup/1-useEffect-basics'
 
 
 function App() {
   return (
     <div className='container'>
-      <UseStateArray2 />
+      <UseEffectBasics />
     </div>
   )
 }
