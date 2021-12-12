@@ -1,10 +1,12 @@
 import React from 'react'
-import UseStateCounter from './tutorial/1-useState/setup/5-useState-counter'
+import UseStateArray2 from './tutorial/1-useState/setup/3-useState-array-marco-testingFilter'
+
+
 
 function App() {
   return (
     <div className='container'>
-      <UseStateCounter />
+      <UseStateArray2 />
     </div>
   )
 }
