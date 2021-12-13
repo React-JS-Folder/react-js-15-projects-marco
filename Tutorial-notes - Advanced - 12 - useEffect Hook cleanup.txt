@@ -1,0 +1,39 @@
+useEffect cleanup 
+when you 'addEventListener' using a useEffect it will add the event multiple times and it will create a lick in the memory (waste of memory - performance)
+  addEventListener
+  addEventListener
+  addEventListener
+  addEventListener
+  
+
+useEffect best practices
+1. addEventListener and execute the code
+2. removeEventListener when the code is executed
+
+
+
+
+example:
+Create a component and add a useEffect hook to trigger a function to see window width changes
+
+########################
+const UseEffectCleanup = () => {
+  const [size, setSize] = useState(window.innerWidth);
+
+  const checkSize = () => {
+    setSize(window.innerWidth);
+  }
+
+  useEffect( () => {
+    window.addEventListener("resize", checkSize);  
+    return () => {
+      console.log('cleanup');
+      window.removeEventListener("resize", checkSize);  
+    }
+  })
+
+  return  <h2>{size} px</h2>
+};
+
+export default UseEffectCleanup;
+########################
