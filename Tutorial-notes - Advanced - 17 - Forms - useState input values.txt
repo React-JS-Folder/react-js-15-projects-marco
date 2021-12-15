@@ -1,0 +1,24 @@
+Forms in React are easy
+
+Form input elements have content that you can get using ---> input.value
+
+
+
+
+## Create a useState hook for each form element you want to get data 
+example:
+const FormComponent01 = () => {
+  const [user, setUser] = useState("");
+  const [email, setEmail] = useState("");
+
+  <form>
+    <input type="text" value={user} onChange={ (e)=> setUser(e.target.value)} />  // when you type will update user 
+
+    <input 
+      type="email" 
+      value={email}                                     // to get the last value or the one you are typing 
+      onChange={ (e)=> setEmail(e.target.value)}        // when you type will update user
+    /> 
+  </form>  
+
+}
