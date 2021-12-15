@@ -1,0 +1,14 @@
+To retrieve data from an URL using FETCH 
+fetch(url).then().then().catch();
+
+
+1. Create a variable and add the url as string value 
+const url = 'https://.................';
+
+
+fetch(url)                               //add an url or variable with a url
+.then((resp) => resp.json())             //convert url data to json object
+.then((user) => {                        //now take any property from json object
+  const {userName} = user;
+  console.log(userName);})
+.catch((error) => console.log(error))    //it will automatically find error 
