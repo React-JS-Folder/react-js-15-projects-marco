@@ -1,0 +1,31 @@
+Fetch doesn't see an error when a page is not found, it has by default the option to redirect to 404 and
+
+Fetch is not React JS, It is javascript.
+To execute code when there is an error using Fetch, you need to check the status 
+
+example:
+
+fetch(url)
+.then( (resp) => resp.json())    //convert url data to json object
+.then( (variable) => do something)   //the parameter represents the object
+.catch( (error) => { console.log(error) })    // will show up if conexion failed
+
+
+
+##complete fetch code to update useState values
+
+fetch(url)
+.then((resp) => {
+  if(resp.status >= 200 & resp.status <= 299){    //if everything is ok 
+   return resp.json();
+  }
+  else {  
+    setIsLoading(false);                          //if there is no conection update useState values 
+    setIsError(true);
+  }
+})
+.then( (user) => {
+  const {login} = user;
+  setUser(login);
+  setIsLoading(false)
+})
