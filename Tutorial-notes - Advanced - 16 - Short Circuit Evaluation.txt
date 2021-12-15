@@ -1,0 +1,11 @@
+Short-circuit evaluation is when you give a variable a conditional value
+
+const firstValue = text || 'hello world';   // it will check variable text 
+
+
+Truthy & Falsy
+
+Truthy  [true, numbers(not cero), "strings", objects, arrays, functions]  //evaluates to true
+Falsy   [false, Cero, "" empty strings, undefined, null, NaN]             //evaluates to false 
+
+
