@@ -1,13 +1,11 @@
 import React from 'react'
-// import ControlledInputs from './tutorial/4-forms/setup/1-controlled-inputs'
-import MarcoTodoList from './tutorial/4-forms/setup/testing-a-todo-list'
+import ControlledInputs from './tutorial/4-forms/setup/2-multiple-inputs'
 
 
 function App() {
   return (
     <div className='container'>
-      {/* <ControlledInputs /> */}
-      <MarcoTodoList />
+      <ControlledInputs />
     </div>
   )
 }
