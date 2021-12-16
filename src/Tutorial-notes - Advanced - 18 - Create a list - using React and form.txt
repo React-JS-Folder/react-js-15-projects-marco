@@ -1,0 +1,25 @@
+How to add elements to a list dinamically (using a form)
+
+the elements of the list is a map and it will be printed on click everytime 
+the map is an array of objects created with useState([])
+and every time you send the form you will update the list (array of objects)
+
+You send the form data as list item onSubmit
+
+-------------------------------------------------
+React needs to index elements of the map, each element needs a unique key
+if the elements of the map don't have id you can get new Date() as key value
+example:
+id: new Date().getTime().toString();
+
+To create a new object with useState values 
+const [firstName, setFirstName] = useState("");
+const [email, setEmail] = useState("");
+const [people, setPeople] = useState([]);
+
+const person = {id: new Date().getTime().toString(), firstName, email}
+
+setPeople( () => {
+  [...people, person];    // now the person object is inside the people array
+})
+
