@@ -1,12 +1,12 @@
 import React from 'react'
-import UseRefBasics from './tutorial/5-useRef/setup/1-useRef-basics'
+import { useReducer } from 'react'
+import ReducerTutorial from './tutorial/6-useReducer/useReducer--pedrotech-explanation'
 
 
 function App() {
   return (
     <div className='container'>
-      <UseRefBasics />
-
+      <ReducerTutorial />
     </div>
   )
 }

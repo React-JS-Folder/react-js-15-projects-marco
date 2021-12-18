@@ -1,0 +1,21 @@
+useReducer is useful when you want to group multiple useState variables
+
+const [state, dispatch] = useReducer(reducer, { });     //state, dispatch are just names, but there are used in the web comunity
+
+1. state // all the useState values 
+2. dispatch // actions (functions)
+3. reducer  // function 
+4. object with initial values for each useState variable 
+
+-------------------------
+
+ORDER OF THE STEPS 
+1. Import { useReducer } from 'react'     //Import useReducer hook 
+
+2. Create the function reducer(state, action)          //this function is a switch statement with multiple functions inside for each case
+
+3. Initialize the useReducer state        //const [state, dispatch] = useReducer(reducer, { });  
+
+4. Assign the function to a button to execute onClick
+
+5. Place the code inside the html 
