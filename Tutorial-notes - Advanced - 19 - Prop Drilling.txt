@@ -1,0 +1,29 @@
+To pass state in from an component to other components that are not direct descendants (children)
+
+###############
+PARENT COMPONENT 
+
+const names = ["ann", "dave", "wesley"];
+  return(
+      <ChildComponent names={names} />
+  )
+
+###############
+CHILD COMPONENT  
+2 ways to get variables from parent 
+
+---------------------------------------------
+1.- Add props as parameter and destructure 
+
+ChildComponent(props) {   
+  const {names} = props; 
+  console.log(names);
+}
+---------------------------------------------
+---------------------------------------------
+2.- Destructure directly as parameters
+ChildComponent({names}) {
+  console.log(names);
+}
+
+---------------------------------------------

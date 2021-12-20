@@ -1,12 +1,11 @@
 import React from 'react'
-import { useReducer } from 'react'
-import ReducerTutorial from './tutorial/6-useReducer/useReducer--pedrotech-explanation'
+import PropDrilling from './tutorial/7-prop-drilling/setup/1-prop-drilling'
 
 
 function App() {
   return (
     <div className='container'>
-      <ReducerTutorial />
+      <PropDrilling />
     </div>
   )
 }
