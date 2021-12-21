@@ -1,11 +1,12 @@
 import React from 'react'
-import PropDrilling from './tutorial/7-prop-drilling/setup/1-prop-drilling'
-
+import AppContext from './tutorial/8-useContext/MarcoContextAPI/AppContext'
+import AppContextpedrotech from './tutorial/8-useContext/setup/MarcoContextAPI/App-context-pedro-tech'
 
 function App() {
   return (
     <div className='container'>
-      <PropDrilling />
+      <AppContext />
+      <AppContextpedrotech />
     </div>
   )
 }

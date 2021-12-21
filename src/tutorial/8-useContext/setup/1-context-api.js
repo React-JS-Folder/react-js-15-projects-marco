@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext } from 'react';   // add useContext from 'react'
 import { data } from '../../../data';
 // more components
 // fix - context api, redux (for more complex cases)
