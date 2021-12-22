@@ -1,12 +1,10 @@
 import React from 'react'
-import AppContext from './tutorial/8-useContext/MarcoContextAPI/AppContext'
-import AppContextpedrotech from './tutorial/8-useContext/setup/MarcoContextAPI/App-context-pedro-tech'
+import Example from './tutorial/9-custom-hooks/setup/1-fetch-example'
 
 function App() {
   return (
     <div className='container'>
-      <AppContext />
-      <AppContextpedrotech />
+      <Example />
     </div>
   )
 }
