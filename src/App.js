@@ -1,12 +1,16 @@
 import React from 'react'
-import Example from './tutorial/9-custom-hooks/setup/1-fetch-example'
+import Index from './tutorial/10-prop-types/setup'
+import MarcoPropsTest from './tutorial/10-prop-types/setup/marcoPropsTest';
+import Product from './tutorial/10-prop-types/setup/Product';
 
 function App() {
   return (
     <div className='container'>
-      <Example />
+      {/* <Index /> */}
+      <MarcoPropsTest />
     </div>
-  )
-}
+  );
+};
+
 
 export default App

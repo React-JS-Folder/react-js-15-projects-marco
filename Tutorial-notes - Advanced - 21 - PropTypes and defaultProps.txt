@@ -1,0 +1,26 @@
+PROPS - propTypes - defaultProps
+
+Props is an object. (group of Parent data to pass to its direct descendant)
+
+Sometimes the data needed it is not provided by Props and there is a need to set data as default.
+example: 
+#####################################################################
+      import React from 'react'
+      import PropTypes from 'prop-types'
+
+      const DescendantComponent = ({username, age}) {        ////if there is no data or it is of the wrong type is a problem
+        return(......)
+      }
+
+In the Component file below the component add this
+
+      DescendantComponent.propTypes = {                      ///////Assign strict types for each props values
+        username: PropTypes.string,
+        age: PropTypes.number,
+      }
+      DescendantComponent.defaultProps = {                   //////////Create default values
+        username: 'Marco',
+        age: 46,
+      }
+
+#####################################################################
