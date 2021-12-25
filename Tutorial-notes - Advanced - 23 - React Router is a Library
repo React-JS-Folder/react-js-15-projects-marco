@@ -1,0 +1,21 @@
+React Router DOM enables you to implement dynamic routing in a web app
+
+>>> npm install react-router-dom@6
+
+
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+
+
+function App() {
+  return (
+    <Router>
+      It can have code here and it will print out always
+      <Routes>
+        <Route path="/" > the componet will render if choose the path
+        </Route>
+        <Route path="/about> the componet will render if choose the path
+        </Route>
+      </Routes>
+    </Router>
+  )
+}
